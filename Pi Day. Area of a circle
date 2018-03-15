@@ -1,0 +1,14 @@
+#The project was to create a program that solved the area of a circle if the user put in the radius
+
+play = True
+
+while play:
+
+    r = float(input ("What is the radius of your circle? : "))
+    print ("the area of the circle with a radius ", str(r), " is: ", str(pi * r**2))
+
+    again=str(input("\nDo you want to solve another, type yes or no "))
+    if again == "no" or "No":
+        print("Thank you for playing!")
+
+        play = False
