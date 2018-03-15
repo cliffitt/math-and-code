@@ -1,0 +1,15 @@
+print("This program solves any linear equation with one variable \n")
+print("Your equation must be in the format of aX + b = cX + d")
+
+a= float(input("What is your value for a? \n"))
+b= float(input("What is your value for b? \n"))
+c= float(input("What is your value for c? \n"))
+d= float(input("What is your value for d? \n"))
+
+if(a==c and b==d):
+    print("Infinite Solutions")
+elif(a==c):
+    print("Wrong Equation: No Solution")
+else:
+    x = (d-b)/(a-c)
+    print("The vale for x = ", x)
